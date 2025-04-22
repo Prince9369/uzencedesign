@@ -4,7 +4,7 @@ A comprehensive design system built with React, TypeScript, TailwindCSS, and Sto
 
 ## Demo Links
 
-- **Storybook**: [View Storybook Documentation](https://uzencedesign-storybook.vercel.app/)
+- **Storybook**: [View Storybook Documentation](https://uzencedesign.vercel.app/)
 - **GitHub Repository**: [View Source Code](https://github.com/Prince9369/uzencedesign)
 
 ![Design System Preview](./screenshots/preview.png)
