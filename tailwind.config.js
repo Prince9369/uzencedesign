@@ -92,5 +92,5 @@ export default {
     },
   },
   plugins: [],
-  darkMode: 'media',
+  darkMode: 'class',
 }

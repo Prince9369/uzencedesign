@@ -1,4 +1,6 @@
 import '../src/index.css';
+import { ThemeProvider } from '../src/components/theme/ThemeContext';
+import React from 'react';
 
 export default {
   parameters: {
@@ -25,4 +27,11 @@ export default {
       toc: true, // Enable table of contents for docs
     },
   },
+  decorators: [
+    (Story) => (
+      <ThemeProvider>
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
 };

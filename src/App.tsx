@@ -6,6 +6,8 @@ import { Accordion } from './components/data-display/accordion/Accordion';
 import { Tag } from './components/data-display/tag/Tag';
 import { TopNav } from './components/navigation/top-nav/TopNav';
 import { Tabs } from './components/navigation/tabs/Tabs';
+import { ThemeProvider } from './components/theme/ThemeContext';
+import { ThemeToggle } from './components/theme/ThemeToggle';
 
 function App() {
   // Sample data for components
@@ -150,9 +152,16 @@ function App() {
   );
 
   return (
-    <div className="min-h-screen bg-neutral-50 dark:bg-neutral-900">
-      {/* Top Navigation */}
-      <TopNav brand={<Logo />} items={navItems} variant="bordered" sticky />
+    <ThemeProvider>
+      <div className="min-h-screen bg-neutral-50 dark:bg-neutral-900">
+        {/* Top Navigation */}
+        <TopNav
+          brand={<Logo />}
+          items={navItems}
+          variant="bordered"
+          sticky
+          rightContent={<ThemeToggle />}
+        />
 
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -277,7 +286,8 @@ function App() {
           </div>
         </div>
       </footer>
-    </div>
+      </div>
+    </ThemeProvider>
   );
 }
 
