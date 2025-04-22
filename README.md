@@ -1,10 +1,10 @@
 # UZENCE Design System
 
-A comprehensive design system built with React, TypeScript, TailwindCSS, and Storybook. This design system provides a collection of reusable components for building enterprise applications.
+A comprehensive design system built with React, TypeScript, TailwindCSS, and Storybook. This design system provides a collection of reusable components for building enterprise applications with full support for both light and dark themes.
 
 ## Demo Links
 
-- **Storybook**: [View Storybook Documentation](https://your-storybook-url-here.com)
+- **Storybook**: [View Storybook Documentation](https://uzencedesign-storybook.vercel.app/)
 - **GitHub Repository**: [View Source Code](https://github.com/Prince9369/uzencedesign)
 
 ![Design System Preview](./screenshots/preview.png)
@@ -16,7 +16,7 @@ A comprehensive design system built with React, TypeScript, TailwindCSS, and Sto
 - **Navigation Components**: Top Navigation Bar and Tabs
 - **Accessibility**: WCAG-compliant with proper ARIA roles and keyboard navigation
 - **Responsive Design**: All components are responsive and work on mobile, tablet, and desktop
-- **Theme Support**: Light and dark theme support
+- **Theme Support**: Interactive light and dark theme toggle with system preference detection and persistence
 - **Documentation**: Comprehensive documentation with Storybook
 
 ## Getting Started
@@ -59,7 +59,7 @@ The color system is a token-based system supporting B2B enterprise UI needs. It 
 - Neutral Colors (greys, whites, backgrounds, borders)
 - Semantic Colors: Success, Info, Warning, Error
 - Surface & Background Layers
-- Light & Dark Theme Support
+- Light & Dark Theme Support with interactive toggle
 
 ### Data Display Components
 
@@ -143,6 +143,9 @@ This design system was created as part of an assignment focusing on:
 3. **Navigation Components**:
    - Top Navigation Bar
    - Tabs
+4. **Theme Components**:
+   - ThemeProvider (context)
+   - ThemeToggle (light/dark mode switch)
 
 ### Screenshots
 
@@ -160,6 +163,9 @@ This design system was created as part of an assignment focusing on:
 
 #### Tabs
 ![Tabs](./screenshots/tabs.gif)
+
+#### Theme Toggle
+![Theme Toggle](./screenshots/theme-toggle.gif)
 
 ## License
 
